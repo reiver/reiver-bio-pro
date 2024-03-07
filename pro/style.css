@@ -31,8 +31,13 @@ h1 {
 }
 h2 {
 	border-bottom:1px solid #d0d0d0;
+	margin:21pt 0 0 0;
 	padding-bottom:3pt;
 }
+h3 {
+	text-transform:uppercase;
+}
+
 
 p {
 	font-size: 12pt;
