@@ -45,14 +45,26 @@ p {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	hyphens: auto;
-	text-align: justify;
   
 	@media screen and (min-width: 450pt){ 
 		font-size: 13.5pt;
 		line-height: 1.667;
 	}
 }
+p, li {
+	text-align: justify;
+}
+
 
 img[align="right"] {
 	margin-left:1.5em;
+}
+
+
+body {
+	counter-reset: citation-number-counter;
+}
+sup.citation a:before {
+	counter-increment: citation-number-counter +1;
+	content: "[" counter(citation-number-counter) "]";
 }
